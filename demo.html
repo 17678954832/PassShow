@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form action="" method="post">
+		用户名：<input type=text placeholder="请输入用户名"><BR>
+		密码：<span id="pass">
+				<input type=password id="pw" placeholder="请输入密码" >
+			  </span>
+		<input type="checkbox" id="showPass" 
+		onclick="
+		var temp=document.getElementById('pw').value;
+		if(this.checked){
+			document.getElementById('pass').innerHTML='<input type=text id=pw name=pw>';
+		}
+		else
+		{
+			document.getElementById('pass').innerHTML='<input type=password id=pw name=pw>';
+		} 
+			document.getElementById('pw').value=temp;">
+	</form>
+</body>
+<script type="text/javascript">
+
+</script>
+</html>
